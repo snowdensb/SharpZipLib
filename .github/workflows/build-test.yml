@@ -108,7 +108,7 @@ jobs:
       run: dotcover report --source=${{env.COVER_SNAPSHOT}} --reporttype=detailedxml --output=dotcover-report.xml
   
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1.2.2
+      uses: codecov/codecov-action@v1.5.2
       with:
         files: dotcover-report.xml
         
