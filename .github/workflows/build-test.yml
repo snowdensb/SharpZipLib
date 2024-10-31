@@ -32,7 +32,7 @@ jobs:
         fetch-depth: 0
 
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '3.1.x'
         
@@ -60,7 +60,7 @@ jobs:
 
     - name: Setup .NET Core
       if: matrix.target == 'netcoreapp3.1'
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '3.1.x'
 
@@ -87,7 +87,7 @@ jobs:
         fetch-depth: 0
         
     - name: Setup .NET
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '3.1.x'
         
@@ -133,7 +133,7 @@ jobs:
         fetch-depth: 0
       
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '5.0.x'
         
