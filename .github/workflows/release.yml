@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Update DocFX documentation
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         ref: ${{ github.events.inputs.tag }}
     - uses: nikeee/docfx-action@v1.0.0
