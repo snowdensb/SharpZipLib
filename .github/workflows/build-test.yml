@@ -113,7 +113,7 @@ jobs:
         files: dotcover-report.xml
         
     - name: Upload coverage snapshot artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Code coverage snapshot
         path: ${{env.COVER_SNAPSHOT}}
@@ -162,7 +162,7 @@ jobs:
       run: dotnet pack ${{ env.PKG_PROJ }} -c Release --output dist ${{ env.PKG_PROPS }} /p:Version=${{ env.PKG_VERSION }}
 
     - name: Upload nuget package artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Nuget package
         path: dist/*.nupkg
