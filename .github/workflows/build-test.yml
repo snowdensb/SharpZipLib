@@ -76,7 +76,7 @@ jobs:
       
   CodeCov:
     name: Code Coverage
-    runs-on: windows-2019
+    runs-on: windows-2022
     env:
       DOTCOVER_VER: 2021.1.2
       DOTCOVER_PKG: jetbrains.dotcover.commandlinetools
@@ -120,7 +120,7 @@ jobs:
 
   Pack:
     needs: [Build, Test, CodeCov]
-    runs-on: windows-2019
+    runs-on: windows-2022
     env:
       PKG_SUFFIX: ''
       PKG_PROJ: src/ICSharpCode.SharpZipLib/ICSharpCode.SharpZipLib.csproj
